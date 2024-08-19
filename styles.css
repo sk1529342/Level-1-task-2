@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header*/
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* About*/
+.about {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Skills*/
+.skills {
+    padding: 2rem;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.skills ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.skills li {
+    background: #e67e22;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Portfolio*/
+.portfolio {
+    padding: 2rem;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.portfolio h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+/* Contact*/
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* Footer*/
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #f39c12;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        flex-basis: 100%;
+        max-width: 500px;
+    }
+}
